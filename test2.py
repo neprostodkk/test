@@ -1,15 +1,15 @@
 def maximize_number(A, B):
-    max_number = int(A)  # Изначально считаем A самым большим числом
+    max_number = int(A)
     A = list(A)
     B = list(B)
 
     for i in range(len(A)):
         for j in range(len(B)):
-            temp_A = A[:]  # Создаем копию A
-            temp_A[i] = B[j]  # Заменяем цифру в A на цифру из B
-            new_number = int("".join(temp_A))  # Преобразуем список обратно в число
+            temp_A = A[:]
+            temp_A[i] = B[j]
+            new_number = int("".join(temp_A))
             if new_number > max_number:
-                max_number = new_number  # Обновляем максимальное число
+                max_number = new_number
 
     return max_number
 

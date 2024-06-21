@@ -14,7 +14,6 @@ def find_largest_perfect_square(arr):
 
     return max_perfect_square
 
-# Пример использования
 numbers = [4, 7, 9, 16, 25, 36, 49]
 result = find_largest_perfect_square(numbers)
 
